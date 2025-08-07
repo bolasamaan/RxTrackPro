@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  background: linear-gradient(to right, #1565c0, #1976d2);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  color: white;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  background: #1565c0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.app-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1565c0;
+}
+
+.main-content {
+  margin-top: 90px;
+  padding: 2rem;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  background: #e3eafc;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.04);
+}
+nav li {
+  flex: 1;
+}
+nav a {
+  display: block;
+  padding: 1.1rem 0.5rem;
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  transition: background 0.18s, color 0.18s;
+  font-size: 1.08rem;
+}
+nav a:hover {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f4f8;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.04);
+}
+.user-info button {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+.user-info button:hover {
+  background: #c62828;
+}
+
+.content-section, .auth-container, .upload-container, .disposition-container, .reporting-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+.auth-container h2, .upload-container h2, .disposition-container h2, .reporting-container h2 {
+  color: #1565c0;
+  margin-bottom: 1.7rem;
+  font-size: 1.5rem;
+}
+.auth-container form, .upload-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.auth-container input, .upload-container input[type="file"], .auth-container button, .upload-container button {
+  padding: 0.8rem 1.1rem;
+  border-radius: 7px;
+  border: 1px solid #b0bec5;
+  font-size: 1.08rem;
+}
+.auth-container button, .upload-container button {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.18s;
+}
+.auth-container button:hover, .upload-container button:hover {
+  background: #1976d2;
+}
+.auth-container .error {
+  color: #d32f2f;
+  margin-top: 0.5rem;
+  font-size: 1.08rem;
+}
